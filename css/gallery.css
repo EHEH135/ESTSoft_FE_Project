@@ -1,0 +1,51 @@
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #D97652;
+    margin: 0 auto; /* 필요에 따라 추가 */
+}
+
+.gallery-content  {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    max-width: 710px; /* 가로 너비를 지정하여 중앙 정렬을 돕기 */
+    margin: 0 auto; /* 가로 중앙 정렬 */
+    opacity: 1; /* opacity 0px는 의미가 없음 */
+}
+
+.gallery-continue {
+    width: 290px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 기본적으로 3개의 열 */
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.gallery-grid img {
+    max-width: 378px;
+    max-height: 378px;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 이미지 비율 유지 및 자르기 */
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,136 @@
+@import url(./font.css);
+@import url(./heading.css);
+@import url(./features.css);
+@import url(./gallery.css);
+@import url(./footer.css);
+@import url(./subscribe.css);
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+
+body {
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1920px;
+    /* margin: 0 auto; */
+    padding: 0 320px;
+}
+
+.btn-download {
+    background-color: #D97652;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 40px;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.btn-more {
+    background-color: #D97652;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 40px;
+    align-content: center;
+    width: 140px;
+    height: 50px;
+}
+
+#location {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#location h1 {
+    width: 263px;
+    height: 45px;
+    top: 2985px;
+    left: 320px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+}
+
+#location p {
+    width: 395px;
+    height: 20px;
+    top: 3050px;
+    left: 320px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+
+#map {
+    height: 400px;
+    background-color: #eee;
+}
+
+@media (max-width: 768px) {
+    #hero, .feature {
+        flex-direction: column;
+    }
+
+    .hero-content, .feature-content {
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* 큰 화면 */
+@media (max-width: 1920px) {
+    main, header, .footer-content {
+        padding: 0 16.67%;
+    }
+}
+
+/* 중간 크기 화면 */
+@media (max-width: 1440px) {
+    main, header, .footer-content {
+        padding: 0 12%;
+    }
+}
+
+/* 작은 화면 (태블릿) */
+@media (max-width: 1024px) {
+    main, header, .footer-content {
+        padding: 0 8%;
+    }
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+    main, header, .footer-content {
+        padding: 0 5%;
+    }
+}

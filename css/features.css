@@ -1,0 +1,38 @@
+#features {
+    padding: 4rem 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.feature img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-content h1 {
+    width: 510px;
+    height: 135px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.feature-content p {
+    width: 510px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.feature-content {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
