@@ -9,7 +9,15 @@
     display: flex;
 }
 
+.center{
+    justify-content: center;
+    align-items: center;
+}
 
+.left{
+    justify-content: center;
+    align-items: left;
+}
 
 .grid {
     display: grid;

@@ -64,26 +64,44 @@
                     <img src="./asset/img/gallery_cat5.png" alt="Cat 5">
                     <img src="./asset/img/gallery_cat6.png" alt="Cat 6">
                 </div>
-                <div class="gallery-show">
-                    <p>Continue exploring HODU</p>
+                <div class="gallery-show flex flex-column center">
+                    <span>Continue exploring HODU</span>
                     <a href="#" class="btn-more">Show more</a>
                 </div>
             </div>
         </section>
 
+        <div class="container">
+            <hr class="horizon"/>
+        </div>
+
         <section id="location">
-            <h2>Where you'll be</h2>
-            <div id="map">
-                <!-- 지도 API 또는 iframe 삽입 위치 -->
+            <div class="container flex flex-column">
+                <h2>Where you'll be</h2>
+                <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+                <div id="map">
+                    <!-- 지도 API 또는 iframe 삽입 위치 -->
+                </div>
             </div>
         </section>
 
         <section id="subscribe">
-            <h2>Subscribe to our Blog post</h2>
-            <form id="subscribe-form">
-                <input type="email" placeholder="Enter your e-mail address" required>
-                <button type="submit">Subscribe</button>
-            </form>
+            <div class="container">
+                <div class="subscribe grid center">
+                    <div class="flex flex-column left subscribe-content">
+                        <h2>Subscribe to our Blog post</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />
+                            Lorem Ipsum has been the industry's standard dummy text </p>
+                    </div>
+                    <form id="subscribe-form">
+                        <label for="email-input" class="flex center">
+                            <img src="./asset/svg/mail.svg" alt="e-mail">
+                            <input type="email" id="email-input" placeholder="Enter your e-mail address">
+                        </label>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 

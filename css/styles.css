@@ -242,8 +242,12 @@ nav a:not([class^="btn"]) {
     box-shadow: 10px 10px 30px 0px #00000040;
 }
 
+.gallery-show {
+    margin-top: 100px;
+    gap:29px;
+}
+
 .gallery-show p {
-    margin-top: 100px; /* 위쪽 섹션과의 간격을 유지 */
     margin-bottom: 0; /* 아래쪽 요소와의 간격을 없앰 */
     font-size: 24px;
     font-weight: 700;
@@ -253,37 +257,108 @@ nav a:not([class^="btn"]) {
     opacity: 1;
 }
 
-.gallery-show .btn-more {
-    margin-top: 10px; /* 버튼과 텍스트 사이의 간격 */
-    margin-bottom: 0; /* 더 이상의 하단 간격을 없앰 */
-    display: inline-block;
+/* 수평 경계 */
+.horizon {
+    margin: 80px 0 68px 0;
+    color: #C4C4C4;
 }
 
 /* 위치 섹션 */
-#location {
-    padding: 100px 0;
+#location h2{
+    width: 263px;
+    height: 45px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#location p {
+    width: 395px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #606367;
+    margin-bottom: 48px;
 }
 
 #map {
-    height: 400px;
+    height: 520px;
+    border-radius: 12px;
     background-color: #ddd; /* 임시 배경색 */
+    /* margin-bottom:  */
 }
 
 /* 구독 섹션 */
 #subscribe {
+    margin-top:80px;
+}
+
+.subscribe {
     background-color: #2C2C2C;
-    color: white;
-    padding: 50px 0;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-bottom: -100px;
     position: relative;
     z-index: 2;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+    padding-left: 58px;
+    padding-right: 58px;
+    /* gap: 163px; */
+}
+
+.subscribe-content{
+    width: 471px;
+    height: 99px;
+
+}
+
+.subscribe h2{
+    color: white;
+    max-width: 448px;
+    max-height: 45px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.subscribe p{
+    max-width: 471px;
+    max-height: 36px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: white;
 }
 
 #subscribe-form {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+    width: 530px;
+    height: 60px;
+    gap: 0px;
+    border-radius: 60px;
+    opacity: 0px;
+    background: #FFFFFF;
+    padding-left: 28px;
+    padding-right: 6px;
 }
 
 #subscribe-form input {
@@ -294,12 +369,31 @@ nav a:not([class^="btn"]) {
 }
 
 #subscribe-form button {
-    padding: 10px 20px;
-    background-color: #FF9C55;
-    color: white;
+    width: 135px;
+    height: 50px;
+    border-radius: 40px;
     border: none;
-    border-radius: 0 5px 5px 0;
+    opacity: 0px;
+    background: #D97652;
+    color: white;
     cursor: pointer;
+}
+
+.subscribe-form img{
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe-form input{
+    width: 184px;
+    height: 20px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #767676;
+    margin-left: 40px;
 }
 
 /* 푸터 */
