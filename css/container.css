@@ -1,0 +1,29 @@
+/* 컨테이너 */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 320px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+.grid {
+    display: grid;
+}
+
+.spacebeetween {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-1-5 {
+    gap: 4rem;
+}
