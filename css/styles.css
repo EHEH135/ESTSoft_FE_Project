@@ -66,9 +66,9 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.logo img{
+    width: 130px;
+    height: 40px;
 }
 
 nav ul {
@@ -397,38 +397,65 @@ nav a:not([class^="btn"]) {
 }
 
 /* 푸터 */
+/* Footer Styling */
 footer {
-    background-color: #F2EDE4;
-    padding: 150px 0 50px;
+    background-color: #fff;
     position: relative;
+    padding-top: 340px; /* Ensure padding for the background image */
+    text-align: center; /* Center the content horizontally */
 }
 
 footer::before {
     content: '';
     position: absolute;
-    top: -200px;
+    top: 0;
     left: 0;
     right: 0;
-    height: 300px;
-    background-image: url('cat-face.jpg');
+    height: 340px;
+    background-image: url('../asset/img/background_cat.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
     z-index: 1;
 }
 
 .footer-content {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Make sure the content is on top of the background image */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 160px; /* Adjust height */
 }
 
-.social-links a {
-    margin-left: 20px;
-    color: #FF9C55;
-    font-size: 24px;
+.social-links {
+    display: flex;
+    gap: 20px; /* Spacing between icons */
+}
+
+.social-links a img {
+    width: 42px;
+    height: 42px;
+    color: #F29D52;
+    
+}
+
+.footer-logo img    {  
+    width: 226px;
+    height: 70px;
+    align-items: left;
+}
+
+/* Additional styling for responsiveness */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
 }
 
 /* 스크롤 탑 버튼 */
