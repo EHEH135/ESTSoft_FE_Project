@@ -98,7 +98,15 @@
                             <img src="./asset/svg/mail.svg" alt="e-mail">
                             <input type="email" id="email-input" placeholder="Enter your e-mail address">
                         </label>
-                        <button type="submit">Subscribe</button>
+                        <button type="button" id="subscribe-button">Subscribe</button>
+                    
+                        <!-- 모달창 -->
+                        <div id="subscribe-modal" class="modal">
+                            <div class="modal-content">
+                                <h2>Thank you for subscribing!</h2>
+                                <button type="submit" id="modal-close">OK! I love HODU</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -131,13 +139,8 @@
         <img src="./asset/svg/keyboard_arrow_up.svg" alt="Scroll to top">
     </button>
 
-    <div id="subscribe-modal" class="modal">
-        <div class="modal-content">
-            <h2>Thank you for subscribing!</h2>
-            <button id="modal-close">OK! I love HODU</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="./js/emailCheck.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/headerFixer.js"></script>
 </body>
 </html>

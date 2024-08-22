@@ -39,25 +39,25 @@
 
 /* 전체 레이아웃 */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* 헤더 */
+/* 기본 헤더 스타일 */
 header {
-    background-color: transparent;
-    padding: 20px 0;
+    width: 100%;
     background-color: #F2E9D8;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
 }
 
-header.sticky {
+/* 스크롤 시 고정 상태로 변경되는 스타일 */
+header.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    background-color: #F2EDE4;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 nav {
@@ -466,8 +466,8 @@ footer::before {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #FFFFFFCC;
     border: 1px solid #C4C4C4;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,36 +486,33 @@ footer::before {
     height: 40px;
 }
 
+.scroll-top-btn img:hover {
+    filter: invert(1);
+}
+
 /* 모달 */
 .modal {
     display: none;
     position: fixed;
-    z-index: 2000;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
-    background-color: white;
-    margin: 15% auto;
+    width: 600px;
+    height: 400px;
+    background: url("../asset/img/modal_background.png");
+    background-size: cover;
     padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+    border-radius: 30px;
     text-align: center;
 }
 
-#modal-close {
-    background-color: #FF9C55;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
 
 /* 반응형 디자인 */
 @media (max-width: 1024px) {
