@@ -397,12 +397,11 @@ nav a:not([class^="btn"]) {
 }
 
 /* 푸터 */
-/* Footer Styling */
 footer {
     background-color: #fff;
     position: relative;
-    padding-top: 340px; /* Ensure padding for the background image */
-    text-align: center; /* Center the content horizontally */
+    padding-top: 340px;
+    text-align: center; 
 }
 
 footer::before {
@@ -420,16 +419,16 @@ footer::before {
 
 .footer-content {
     position: relative;
-    z-index: 2; /* Make sure the content is on top of the background image */
+    z-index: 2; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 160px; /* Adjust height */
+    height: 160px; 
 }
 
 .social-links {
     display: flex;
-    gap: 20px; /* Spacing between icons */
+    gap: 20px; 
 }
 
 .social-links a img {
@@ -445,7 +444,6 @@ footer::before {
     align-items: left;
 }
 
-/* Additional styling for responsiveness */
 @media screen and (max-width: 768px) {
     .footer-content {
         flex-direction: column;

@@ -17,13 +17,13 @@ function goToModal() {
         return;
     }
     else{
-        document.getElementById("subscribe-modal").style.display = "flex";  // 모달창 보이기
+        document.getElementById("subscribe-modal").style.display = "flex";
     }
 }
 
 function closeModal() {
     alert("폼이 제출되었습니다.");
-    document.getElementById("subscribe-modal").style.display = "none";  // 모달창 숨기기
+    document.getElementById("subscribe-modal").style.display = "none";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
