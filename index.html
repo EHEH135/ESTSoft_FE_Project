@@ -95,13 +95,19 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />
                             Lorem Ipsum has been the industry's standard dummy text </p>
                     </div>
-                    <form id="subscribe-form">
-                        <label for="email-input" class="flex center">
-                            <img src="./asset/svg/mail.svg" alt="e-mail"/>
-                            <input type="email" id="email-input" placeholder="Enter your e-mail address">
-                        </label>
-                        <button type="button" id="subscribe-button">Subscribe</button>
-                    
+                    <form>
+                        <div class="subscribe-form">
+                            <label for="email-input" class="flex center">
+                                <img src="./asset/svg/mail.svg" alt="e-mail"/>
+                                <input type="email" id="email-input" placeholder="Enter your e-mail address">
+                            </label>
+                            <button type="button" id="subscribe-button" class="desktop-btn">Subscribe</button>
+                        </div>
+                        <div class="mobile-btn-box">
+                            <button type="button" id="subscribe-button" class="mobile-btn">Subscribe</button>
+                        </div>
+                        
+
                         <div id="subscribe-modal" class="modal">
                             <div class="modal-content center flex flex-column">
                                 <div class="modal-img">

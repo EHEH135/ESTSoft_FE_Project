@@ -66,12 +66,12 @@
         max-width: 100%;
     }
 
-    #subscribe-form{
+    .subscribe-form{
         width: 100%;
         margin-left: 0px;
     }
 
-    #subscribe-form input{
+    .subscribe-form input{
         width: 500px;
     }
 }
@@ -116,7 +116,7 @@
     }
 
     /* subscribe 섹션 */
-    #subscribe-form input{
+    .subscribe-form input{
         width: 300px;
     }
 
@@ -131,5 +131,70 @@
 
 /* 모바일 화면 2 */
 @media (max-width: 390px){
+    body {
+        min-width: 390px; /* 화면이 390px 이하로 줄어들지 않도록 설정 */
+        overflow-x: auto; /* X축 스크롤바를 표시 */
+    }
     
+    /* subscribe 섹션 */
+    .desktop-btn{
+        display: none;
+    }
+
+    .mobile-btn-box{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-btn{
+        display: block;
+        width: 115px;
+        height: 40px;
+        border-radius: 40px;
+        background: #D97652;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .subscribe{
+        height: 348px;
+    }
+
+    .subscribe-content p{
+        width: 262px;
+        height: 72px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    .subscribe-content h2{
+        width: 187px;
+        height: 60px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .subscribe-form{
+        width: 262px;
+        height: 40px;
+        justify-items: start;
+    }
+
+    .subscribe-form input{
+        width: 144px;
+        height: 15px;
+        font-size: 12px;
+    }
+
+    .subscribe-form img{
+        width: 15px;
+        height: 15px;
+    }
 }

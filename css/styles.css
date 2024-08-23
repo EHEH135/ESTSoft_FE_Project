@@ -288,7 +288,7 @@ nav a:not([class^="btn"]) {
 
 /* 구독 섹션 */
 #subscribe {
-    margin-top:80px;
+    margin-top: 80px;
 }
 
 .subscribe {
@@ -297,90 +297,68 @@ nav a:not([class^="btn"]) {
     margin-bottom: -100px;
     position: relative;
     z-index: 2;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     height: 200px;
-    padding-left: 58px;
-    padding-right: 58px;
-    /* gap: 163px; */
+    padding: 30px 58px;
+    gap: 20px;
 }
 
-.subscribe-content{
-    width: 471px;
-    height: 99px;
+.subscribe-content {
+    max-width: 471px;
 }
 
-.subscribe h2{
+.subscribe h2 {
     color: white;
-    max-width: 448px;
-    max-height: 45px;
-    gap: 0px;
-    opacity: 0px;
     font-size: clamp(24px, 5vw, 36px);
     font-weight: 700;
     line-height: clamp(30px, 6vw, 45px);
-    text-align: left;
     margin-bottom: 18px;
 }
 
-.subscribe p{
-    max-width: 471px;
-    max-height: 36px;
-    gap: 0px;
-    opacity: 0px;
+.subscribe p {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    text-align: left;
     color: white;
 }
 
-#subscribe-form {
+.subscribe-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
     width: 530px;
-    height: 60px;
-    gap: 0px;
-    border-radius: 60px;
-    opacity: 0px;
     background: #FFFFFF;
+    border-radius: 60px;
 }
 
-#subscribe-form input {
+.subscribe-form input {
     padding: 10px;
     width: 300px;
     border-radius: 5px 0 0 5px;
     border: none;
+    font-size: 16px;
+    color: #767676;
 }
 
-#subscribe-form button {
+.subscribe-form button {
     width: 135px;
     height: 50px;
     border-radius: 40px;
-    border: none;
-    opacity: 0px;
     background: #D97652;
     color: white;
     cursor: pointer;
-    margin-right: 6px;
+    border: none;
 }
 
-#subscribe-form img{
+.mobile-btn {
+    display: none;
+}
+
+.subscribe-form img {
     width: 24px;
     height: 24px;
     margin-left: 28px;
-}
-
-#subscribe-form input{
-    width: 184px;
-    height: 20px;
-    opacity: 0px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;
-    color: #767676;
 }
 
 /* 푸터 */
