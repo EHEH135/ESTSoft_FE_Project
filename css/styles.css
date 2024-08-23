@@ -5,7 +5,7 @@
     font-family: 'Pretendard-Regular';
 }
 /* 버튼 모음 */
-.btn-download {
+.btn-download, .btn-more, .btn-download-intro {
     background-color: #D97652;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -21,20 +21,11 @@
     align-content: center;
 }
 
-.btn-more {
-    background-color: #D97652;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    border-radius: 40px;
-    width: 143px;
-    height: 50px;
-    text-align: center;
-    align-content: center;
+.btn-more, .btn-download-intro {
+    font-size: clamp(14px, 2vw, 16px); /* 유동적인 폰트 크기 */
+    line-height: clamp(18px, 3vw, 20px); /* 유동적인 줄 간격 */
+    width: clamp(120px, 10vw, 140px); /* 유동적인 너비 */
+    height: clamp(40px, 6vw, 50px); /* 유동적인 높이 */
 }
 
 /* 전체 레이아웃 */
@@ -96,7 +87,7 @@ nav a:not([class^="btn"]) {
     color: #000;
 }
 
-/* 히어로 섹션 */
+/* 인트로 섹션 */
 #intro {
     padding: 2rem 0;
     overflow-y: hidden;
@@ -106,22 +97,22 @@ nav a:not([class^="btn"]) {
 
 .intro-content {
     flex: 1.05;
-    gap: 1.5rem; /* h1과 p 사이의 간격 */
-    padding-right: 2rem; /* 이미지와의 간격 설정 */
+    gap: 1.5rem;
+    padding-right: 2rem;
     padding-bottom: 100px;
 }
 
 .intro-content h1 {
     font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
-    max-width: 100%; /* 최대 너비를 100%로 설정 */
+    font-size: clamp(18px, 5vw, 48px);
+    line-height: clamp(22px, 6vw, 60px);
+    max-width: 100%; 
 }
 
 .intro-content p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: clamp(14px, 3vw, 16px); 
+    line-height: clamp(20px, 4vw, 20px); 
     max-width: 420px;
     max-height: 86px;
 }
@@ -145,7 +136,7 @@ nav a:not([class^="btn"]) {
     align-items: center;
 }
 
-/* 특징 섹션 */
+/* features 섹션 */
 #features {
     padding: 100px 0;
 }
@@ -160,8 +151,6 @@ nav a:not([class^="btn"]) {
     border-radius: 10px;
     max-width: 660px;
     height: 390px;
-    top: 1060px;
-    left: 320px;
     gap: 0px;
     border-radius: 30px;
     opacity: 0px;
@@ -176,13 +165,11 @@ nav a:not([class^="btn"]) {
 .feature-content h2{
     width: 490px;
     height: 135px;
-    top: 1152px;
-    left: 1090px;
     gap: 0px;
     opacity: 0px;
-    font-size: 36px;
     font-weight: 700;
-    line-height: 45px;
+    font-size: clamp(24px, 5vw, 36px);
+    line-height: clamp(30px, 6vw, 45px);
     text-align: left;
     color: #000;
 }
@@ -190,13 +177,13 @@ nav a:not([class^="btn"]) {
 .feature-content p{
     width: 510px;
     height: 40px;
-    top: 1317px;
-    left: 1090px;
     gap: 0px;
     opacity: 0px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    font-size: clamp(14px, 3vw, 16px);
+    line-height: clamp(18px, 4vw, 20px);
     text-align: left;
     color: #000;
 }
@@ -208,9 +195,9 @@ nav a:not([class^="btn"]) {
 }
 
 #gallery h2{
-    font-size: 48px;
+    font-size: clamp(24px, 5vw, 48px);
     font-weight: 700;
-    line-height: 60px;
+    line-height: clamp(30px, 6vw, 60px);
     color: #D97652;
     margin-bottom: 40px;
 }
@@ -231,13 +218,13 @@ nav a:not([class^="btn"]) {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 72px;
+    gap: clamp(32px, 5vw, 72px);
     margin-top: 50px;
 }
 
 .gallery-grid img {
-    max-width: 378px;
-    max-height: 378px;
+    max-width: clamp(326px, 5vw, 378px);
+    max-height: clamp(326px, 5vw, 378px);
     border-radius: 30px;
     box-shadow: 10px 10px 30px 0px #00000040;
 }
@@ -249,9 +236,9 @@ nav a:not([class^="btn"]) {
 
 .gallery-show span {
     margin-bottom: 0; /* 아래쪽 요소와의 간격을 없앰 */
-    font-size: 24px;
+    font-size: clamp(18px, 3vw, 24px);
     font-weight: 700;
-    line-height: 30px;
+    line-height: clamp(24px, 4vw, 30px);
     text-align: center;
     color: #000;
     opacity: 1;
@@ -269,9 +256,9 @@ nav a:not([class^="btn"]) {
     height: 45px;
     gap: 0px;
     opacity: 0px;
-    font-size: 36px;
+    font-size: clamp(24px, 5vw, 36px);
     font-weight: 700;
-    line-height: 45px;
+    line-height: clamp(30px, 6vw, 45px);
     text-align: left;
     color: #000000;
     margin-bottom: 20px;
@@ -291,7 +278,9 @@ nav a:not([class^="btn"]) {
 }
 
 #map {
-    height: 520px;
+    width: 100%;
+    /* height: 520px; */
+    aspect-ratio: 326/132;
     border-radius: 12px;
     background-color: #ddd; /* 임시 배경색 */
     /* margin-bottom:  */
@@ -318,7 +307,6 @@ nav a:not([class^="btn"]) {
 .subscribe-content{
     width: 471px;
     height: 99px;
-
 }
 
 .subscribe h2{
@@ -327,9 +315,9 @@ nav a:not([class^="btn"]) {
     max-height: 45px;
     gap: 0px;
     opacity: 0px;
-    font-size: 36px;
+    font-size: clamp(24px, 5vw, 36px);
     font-weight: 700;
-    line-height: 45px;
+    line-height: clamp(30px, 6vw, 45px);
     text-align: left;
     margin-bottom: 18px;
 }
@@ -350,15 +338,13 @@ nav a:not([class^="btn"]) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 20px; */
+    margin-left: 40px;
     width: 530px;
     height: 60px;
     gap: 0px;
     border-radius: 60px;
     opacity: 0px;
     background: #FFFFFF;
-    padding-left: 28px;
-    padding-right: 6px;
 }
 
 #subscribe-form input {
@@ -377,14 +363,16 @@ nav a:not([class^="btn"]) {
     background: #D97652;
     color: white;
     cursor: pointer;
+    margin-right: 6px;
 }
 
-.subscribe-form img{
+#subscribe-form img{
     width: 24px;
     height: 24px;
+    margin-left: 28px;
 }
 
-.subscribe-form input{
+#subscribe-form input{
     width: 184px;
     height: 20px;
     opacity: 0px;
@@ -393,7 +381,6 @@ nav a:not([class^="btn"]) {
     line-height: 20px;
     text-align: left;
     color: #767676;
-    margin-left: 40px;
 }
 
 /* 푸터 */

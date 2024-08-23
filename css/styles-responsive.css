@@ -1,0 +1,135 @@
+/* 큰 화면 */
+@media (max-width: 1920px) {
+    .container {
+        padding: 0 16.67%; /* 1920px 기준으로 비율 계산 (320px / 1920px ≈ 16.67%) */
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 12%;
+    }
+
+    /* features 섹션 */
+    .feature {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        display: grid;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .feature img {
+        width: 100%;
+        aspect-ratio: 22/13;
+        max-width: 660px;
+        height: auto;
+    }
+
+    .feature-content {
+        width: 100%;
+        max-width: 660px;
+        padding-left: 0;
+        padding-right: 0; 
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature-content h2, .feature-content p {
+        width: 100%; /* 부모 요소의 너비에 맞춰 조정 */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* gallery 섹션 */
+    .gallery-grid{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    #gallery p{
+        margin-bottom: 0px;
+    }
+
+    /* subscribe 섹션 */
+    .subscribe{
+        grid-template-columns: 1fr;
+        height: 280px;
+    }
+
+    .subscribe h2{
+        max-width: 100%;
+    }
+    
+    .subscribe p{
+        max-width: 100%;
+    }
+
+    #subscribe-form{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #subscribe-form input{
+        width: 500px;
+    }
+}
+
+
+/* 중간 크기 화면 */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 8%;
+    }
+
+    /* 인트로 섹션 */
+    .intro-grid {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-content, .intro-image {
+        margin: 0 auto;  /* 가운데 정렬 */
+        padding: 0px;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        flex: 0;
+    }
+
+    .intro-content h1, .intro-content p{
+        max-width: 68%;  /* 자식 요소들이 그리드의 전체 너비를 차지하도록 설정 */
+        text-align: center;
+    }
+
+    .intro-image{
+        max-width: 45%;
+        aspect-ratio: 1/2;
+    }
+
+    /* gallery 섹션 */
+    .gallery-grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    /* subscribe 섹션 */
+    #subscribe-form input{
+        width: 300px;
+    }
+
+}
+
+/* 모바일 화면 1 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5%;
+    }
+}
+
+/* 모바일 화면 2 */
+@media (max-width: 390px){
+    
+}
