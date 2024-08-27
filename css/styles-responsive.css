@@ -132,8 +132,8 @@
 /* 모바일 화면 2 */
 @media (max-width: 390px){
     body {
-        min-width: 390px; /* 화면이 390px 이하로 줄어들지 않도록 설정 */
-        overflow-x: auto; /* X축 스크롤바를 표시 */
+        min-width: 390px; 
+        overflow-x: auto; 
     }
 
     header {
@@ -141,26 +141,36 @@
     }
 
     .container {
-        padding: 0 8%;
+        padding: 0 32px;
     }
     
+    /* button */
+    .btn-download, .btn-more, .btn-download-intro {
+        width: 114px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: center;
+    }
+
     /* navbar 섹션 */
     .navbar-menu {
-        display: none; /* 처음에 메뉴 숨김 */
+        display: none;
         flex-direction: column;
-        width: 74%; /* 메뉴의 너비 */
-        height: 100vh; /* 화면의 세로 길이 전체 채우기 */
+        width: 74%;
+        height: 100vh;
         background: #263140;
-        position: fixed; /* 화면에 고정 */
+        position: fixed;
         top: 0;
         right: -10%;
         padding: 20px;
-        transition: right 0.3s ease; /* 오른쪽에서 슬라이드 애니메이션 */
+        transition: right 0.3s ease;
         z-index: 1000;
     }
 
     .navbar-menu.open {
-        right: 0; /* 메뉴를 화면에 나타나게 하기 */
+        right: 0;
     }
 
     .navbar-menu li {
@@ -189,6 +199,32 @@
 
     .navbar-togglebtn{
         display: block;
+    }
+
+    /* intro 섹션 */
+    .intro-content {
+        width:100%;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .intro-content h1{
+        /* width: 251px; */
+        /* height: 90px; */
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .intro-content p{
+        /* width: 270px;
+        height: 98px; */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+
     }
 
     /* subscribe 섹션 */
@@ -240,6 +276,7 @@
         width: 262px;
         height: 40px;
         justify-items: start;
+        margin-bottom: 20px;
     }
 
     .subscribe-form input{
@@ -312,11 +349,11 @@
     }
 
     .mobile-link {
-        display: flex; /* flex를 적용 */
-        flex-direction: column; /* 세로로 정렬 */
+        display: flex;
+        flex-direction: column;
         text-align: end;
         margin-right: 22px;  
-        justify-content: space-between; /* 간격을 고르게 */
+        justify-content: space-between;
     }
 
     .mobile-link li{
@@ -331,17 +368,17 @@
     }
 
     .mobile-link a:hover {
-        color: #767676; /* hover 상태에서도 색 고정 */
-        text-decoration: none; /* hover 시에도 밑줄 제거 */
+        color: #767676; 
+        text-decoration: none; 
     }
     
     .mobile-link a:active {
-        color: #767676; /* active 상태에서 색 고정 */
-        text-decoration: none; /* active 시에도 밑줄 제거 */
+        color: #767676; 
+        text-decoration: none; 
     }
     
     .mobile-link a:visited {
-        color: #767676; /* visited 상태에서 색 고정 */
-        text-decoration: none; /* visited 시에도 밑줄 제거 */
+        color: #767676; 
+        text-decoration: none; 
     }
 }
