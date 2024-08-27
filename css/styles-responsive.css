@@ -253,6 +253,40 @@
         height: 15px;
     }
 
+    .modal-img img{
+        width: 80px;
+        height: 62px;
+    }
+
+    .modal-img{
+        width: 80px;
+        height: 62px;
+    }
+
+    .modal-content h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .modal-content p{
+        font-size: 14px;
+        line-height: 18px;
+        width: 189px;
+        height: 36px;
+    }
+
+    .modal-button-box{
+        width: 158px;
+        height: 40px;
+    }
+
+    .modal-button-box button{
+        width: inherit;
+        height: inherit;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
     /* footer 섹션 */
     .footer-logo img    {  
         width: 112px;

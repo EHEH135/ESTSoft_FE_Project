@@ -16,7 +16,7 @@ function goToModal() {
         email.focus();
         return;
     }
-    else{
+    else {
         document.getElementById("subscribe-modal").style.display = "flex";
     }
 }
@@ -28,5 +28,6 @@ function closeModal() {
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("subscribe-button").addEventListener("click", goToModal);
+    document.getElementById("subscribe-button-mobile").addEventListener("click", goToModal);
     document.getElementById("modal-close").addEventListener("click", closeModal);
 });
