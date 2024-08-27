@@ -136,6 +136,44 @@
         overflow-x: auto; /* X축 스크롤바를 표시 */
     }
     
+    /* navbar 섹션 */
+    .navbar-menu {
+        display: none; /* 처음에 메뉴 숨김 */
+        flex-direction: column;
+        width: 74%; /* 메뉴의 너비 */
+        height: 100vh; /* 화면의 세로 길이 전체 채우기 */
+        background: #263140;
+        position: fixed; /* 화면에 고정 */
+        top: 0;
+        right: -10%;
+        padding: 20px;
+        transition: right 0.3s ease; /* 오른쪽에서 슬라이드 애니메이션 */
+        z-index: 1000;
+    }
+
+    .navbar-menu.open {
+        right: 0; /* 메뉴를 화면에 나타나게 하기 */
+    }
+
+    .navbar-menu li {
+        list-style: none;
+        margin: 20px 0;
+    }
+    
+    .navbar-menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .navbar-toggleClose{
+        display: block;
+    }
+
+    .navbar-togglebtn{
+        display: block;
+    }
+
     /* subscribe 섹션 */
     .desktop-btn{
         display: none;
@@ -197,4 +235,7 @@
         width: 15px;
         height: 15px;
     }
+
+    /* footer 섹션 */
+    
 }

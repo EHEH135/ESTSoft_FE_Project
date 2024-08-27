@@ -62,6 +62,16 @@ nav {
     height: 40px;
 }
 
+.navbar-togglebtn{
+    display:none;       
+    color:#263140;
+}
+
+.navbar-toggleClose{
+    color:#fff;
+    display:none;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
