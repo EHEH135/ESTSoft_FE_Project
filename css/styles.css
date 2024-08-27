@@ -67,7 +67,7 @@ nav {
     color:#263140;
 }
 
-.navbar-toggleClose{
+.navbar-toggleClose-btn{
     color:#fff;
     display:none;
 }
@@ -410,13 +410,16 @@ footer::before {
     width: 42px;
     height: 42px;
     color: #F29D52;
-    
 }
 
 .footer-logo img    {  
     width: 226px;
     height: 70px;
     align-items: left;
+}
+
+.mobile-link{
+    display: none;
 }
 
 /* 스크롤 탑 버튼 */

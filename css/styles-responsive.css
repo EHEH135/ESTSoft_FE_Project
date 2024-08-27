@@ -135,6 +135,14 @@
         min-width: 390px; /* 화면이 390px 이하로 줄어들지 않도록 설정 */
         overflow-x: auto; /* X축 스크롤바를 표시 */
     }
+
+    header {
+        min-width: 390px;
+    }
+
+    .container {
+        padding: 0 8%;
+    }
     
     /* navbar 섹션 */
     .navbar-menu {
@@ -166,8 +174,17 @@
         font-size: 20px;
     }
 
-    .navbar-toggleClose{
+    .navbar-menu li a:not([class^="navbar"]){
+        margin-left: 25px;
+    }
+
+    .btn-download{
+        margin: 50px 0 0 -2px;
+    }
+
+    .navbar-toggleClose-btn{
         display: block;
+        margin-bottom: 56px;
     }
 
     .navbar-togglebtn{
@@ -237,5 +254,60 @@
     }
 
     /* footer 섹션 */
+    .footer-logo img    {  
+        width: 112px;
+        height: 34px;
+    }
+
+    .social-links a img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+    }
+
+    .mobile-footer-content{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 30px 5px;
+        max-height: 178px;
+    }
+
+    .mobile-link {
+        display: flex; /* flex를 적용 */
+        flex-direction: column; /* 세로로 정렬 */
+        text-align: end;
+        margin-right: 22px;  
+        justify-content: space-between; /* 간격을 고르게 */
+    }
+
+    .mobile-link li{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #767676;
+    }
+
+    .mobile-link a{
+        text-decoration: none;
+    }
+
+    .mobile-link a:hover {
+        color: #767676; /* hover 상태에서도 색 고정 */
+        text-decoration: none; /* hover 시에도 밑줄 제거 */
+    }
     
+    .mobile-link a:active {
+        color: #767676; /* active 상태에서 색 고정 */
+        text-decoration: none; /* active 시에도 밑줄 제거 */
+    }
+    
+    .mobile-link a:visited {
+        color: #767676; /* visited 상태에서 색 고정 */
+        text-decoration: none; /* visited 시에도 밑줄 제거 */
+    }
 }
