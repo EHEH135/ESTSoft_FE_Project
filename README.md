@@ -110,7 +110,7 @@ window.onload = function() {
 };
 ```
 #### 스크롤 탑 버튼을 구현합니다. 
-조건에 맞게 Javascript로 구현하였습니다.
+조건에 맞게 Javascript와 CSS로 구현하였습니다.
 ```javascript
 window.addEventListener("scroll", function() {
     const scrollBtn = document.getElementById("scroll-top");
@@ -128,6 +128,13 @@ document.getElementById("scroll-top").addEventListener("click", function() {
         behavior: "smooth"
     });
 });
+```
+```css
+@media (max-width: 390px){
+    #scroll-top{
+        display: none;
+    }
+}
 ```
 #### 구독하기 모달창
 정규식을 사용하여서 Javascript로 구현하였습니다.
@@ -155,3 +162,6 @@ function goToModal() {
     }
 }
 ```
+
+## 아쉬웠던 점
+모든 화면 상태에서 반응형으로 만들기 위해 media를 종류별로 나누는 방법과 clamp를 사용해 보았지만 figma사용 미숙과 작업시간 부족으로 인해 구현하지 못했습니다. 시간이 조금 더 있었다면 구현 할 수 있을 것 같다는 아쉬움이 남습니다.
