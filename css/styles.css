@@ -203,6 +203,8 @@ nav a:not([class^="btn"]) {
 
 .feature {
     align-items: center;
+    display: grid;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     gap: 110px;
 }
@@ -299,7 +301,7 @@ nav a:not([class^="btn"]) {
 }
 
 .gallery-show span {
-    margin-bottom: 0; /* 아래쪽 요소와의 간격을 없앰 */
+    margin-bottom: 0;
     font-size: clamp(18px, 3vw, 24px);
     font-weight: 700;
     line-height: clamp(24px, 4vw, 30px);
@@ -343,11 +345,9 @@ nav a:not([class^="btn"]) {
 
 #map {
     width: 100%;
-    /* height: 520px; */
     aspect-ratio: 326/132;
     border-radius: 12px;
-    background-color: #ddd; /* 임시 배경색 */
-    /* margin-bottom:  */
+    background-color: #ddd;
 }
 
 /* 구독 섹션 */
@@ -571,5 +571,5 @@ footer::before {
     background: var(--primary-color);
     border: none;
     color: #fff;
-    cursor: pointer; /* 버튼에도 클릭 가능한 포인터 추가 */
+    cursor: pointer;
 }

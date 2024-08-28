@@ -1,7 +1,7 @@
 /* 큰 화면 */
 @media (max-width: 1920px) {
     .container {
-        padding: 0 16.67%; /* 1920px 기준으로 비율 계산 (320px / 1920px ≈ 16.67%) */
+        padding: 0 16.67%;
     }
 }
 
@@ -39,7 +39,7 @@
     }
 
     .feature-content h2, .feature-content p {
-        width: 100%; /* 부모 요소의 너비에 맞춰 조정 */
+        width: 100%;
         margin: 0;
         padding: 0;
     }
@@ -267,12 +267,51 @@
         height: 422px;
         gap: 0px;
         opacity: 0px;
-        display: flex; /* Flexbox 적용 */
-        justify-content: center; /* 가로 방향 중앙 정렬 */
-        align-items: center; /* 세로 방향 중앙 정렬 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* feature 섹션 */
+    #features{
+        margin-bottom: 60px;
+    }
+
+    .feature-content {
+        gap: 0px;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column  ;
+        justify-content:none;
+    }
+
+    .feature img{
+        width: 326px;
+        height: 190px;
+        border-radius: 18px;
+        box-shadow: 10px 10px 20px 0px #00000040;
+    }
+
+    .feature-content h2{
+        width: 326px;
+        height: 90px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .feature-content p{
+        width: 326px;
+        height: 36px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+    }
 
     /* gallery 섹션 */
     #gallery h2{
