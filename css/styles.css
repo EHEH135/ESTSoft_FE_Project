@@ -1,5 +1,10 @@
-@import url(./font.css);
 @import url(./container.css);
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 :root {
     --primary-color: #D97652;
@@ -7,10 +12,11 @@
     --text-color: #000000;
     --background-color: #FFFFFF;
     --border-radius: 30px;
+    --font-pretendard: 'Pretendard-Regular';
 }
 
 * {
-    font-family: 'Pretendard-Regular';
+    font-family: var(--font-pretendard);
 }
 /* 버튼 모음 */
 .btn-download, .btn-more, .btn-download-intro {
@@ -25,6 +31,20 @@
     height: 50px;
     text-align: center;
     align-content: center;
+}
+
+ul.navbar-menu li a.btn-download {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px; /* Adjust this to vertically center the text */
+    border-radius: var(--border-radius);
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    display: inline-block; /* Makes the a tag behave like a block element */
 }
 
 .btn-more, .btn-download-intro {
@@ -78,20 +98,12 @@ nav {
     display:none;
 }
 
-.navbar-menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    width: 394px;
-    align-items: center;
-}
-
 nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    width: 205px;
+    width: 394px;
+    align-items: center;
 }
 
 nav ul li {
@@ -243,9 +255,9 @@ nav a:not([class^="btn"]) {
 }
 
 #gallery h2{
-    font-size: clamp(24px, 5vw, 48px);
+    font-size: 48px;
     font-weight: 700;
-    line-height: clamp(30px, 6vw, 60px);
+    line-height: 60px;
     color: var(--primary-color);
     margin-bottom: 40px;
 }
@@ -278,6 +290,10 @@ nav a:not([class^="btn"]) {
 }
 
 .gallery-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
     gap:29px;
 }
