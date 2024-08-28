@@ -16,20 +16,22 @@
                 <h1 class="logo">
                     <img src="./asset/svg/Logo-fin.svg" alt="HODU"/>
                 </h1>
-                <ul class="navbar-menu">
-                    <li>
-                        <a href="#" class="navbar-toggleClose-btn" onclick="toggleMenu()">
-                            <img alt="menu toggle close" src="./asset/svg/arrow-right.svg"/>
-                        </a>
-                    </li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#" class="btn-download">Download</a></li>
-                </ul>
-                <a href="#" class="navbar-togglebtn" onclick="toggleMenu()">
+                <div class="navbar-menu">
+                    <ul>
+                        <li>
+                            <button class="navbar-toggleClose-btn" onclick="toggleMenu()">
+                                <img alt="menu toggle close" src="./asset/svg/arrow-right.svg"/>
+                            </button>
+                        </li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+                <button class="navbar-togglebtn" onclick="toggleMenu()">
                     <img alt="menu toggle button" src="./asset/svg/menu.svg"/>
-                </a>
+                </button>
             </nav>
         </div>
     </header>
@@ -37,8 +39,8 @@
     <main>
         <section id="intro">
             <div class="container intro-grid">
-                <div class="intro-content flex flex-column">
-                    <h2>Lorem Ipsum is simply<br /> dummy text of the printing and</h2>
+                <div class="intro-content">
+                    <h2>Lorem Ipsum is simply<br />dummy text of the printing and</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. <br/>
                         Lorem Ipsum has been the industry's standard dummy text

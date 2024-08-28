@@ -5,6 +5,8 @@
     }
 }
 
+
+
 @media (max-width: 1440px) {
     .container {
         padding: 0 12%;
@@ -91,7 +93,7 @@
     }
 
     .intro-content, .intro-image {
-        margin: 0 auto;  /* 가운데 정렬 */
+        margin: 0 auto;
         padding: 0px;
         gap: 3rem;
         align-items: center;
@@ -99,8 +101,8 @@
         flex: 0;
     }
 
-    .intro-content h1, .intro-content p{
-        max-width: 68%;  /* 자식 요소들이 그리드의 전체 너비를 차지하도록 설정 */
+    .intro-content h2, .intro-content p{
+        max-width: 68%;
         text-align: center;
     }
 
@@ -195,10 +197,14 @@
     .navbar-toggleClose-btn{
         display: block;
         margin-bottom: 56px;
+        border:none;
+        background: none;
     }
 
     .navbar-togglebtn{
         display: block;
+        background: none;
+        border: none;
     }
 
     /* intro 섹션 */
