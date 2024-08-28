@@ -53,10 +53,10 @@ html, js, css, asset(이미지, svg)를 나눴습니다.
 
 ## 구현 내용
 ### preview
-PC
+#### PC
 ![Preview PC](./preview_gif/HODU_preview_PC.gif)
-Mobile
-![Preview Mobile](./preview_gif/HODU_preview_PC.gif)
+#### Mobile
+![Preview Mobile](./preview_gif/HODU_preview_Mobile.gif)
 
 ### 요구사항 명세
 1. 피그마를 참고하여 페이지 구현을 합니다.
