@@ -208,7 +208,7 @@
         margin: 0;
     }
 
-    .intro-content h1{
+    .intro-content h2{
         /* width: 251px; */
         /* height: 90px; */
         font-size: 24px;
@@ -380,5 +380,10 @@
     .mobile-link a:visited {
         color: #767676; 
         text-decoration: none; 
+    }
+
+    /* scroll-top */
+    #scroll-top{
+        display: none;
     }
 }
