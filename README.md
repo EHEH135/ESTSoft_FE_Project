@@ -3,7 +3,7 @@
 
 ## 간략 설명
 ### 목표
-Figma 디자인에 맞춰 최대한 같게 페이지를 만들고 배포하기.
+Figma 디자인에 맞춰 구현하고, 배포하기.
 
 ### 실제 페이지 (배포)
 https://eheh135.github.io/estsoft_fe_project/ 
