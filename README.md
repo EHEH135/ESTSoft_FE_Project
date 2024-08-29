@@ -51,6 +51,17 @@ html, js, css, asset(이미지, svg)를 나눴습니다.
     └── toggleMenu.js
 ```
 
+## 개발 일정
+```mermaid
+gantt
+    est Soft FE Project
+    dateFormat  YYYY-MM-DD
+    section 개발
+    HTML             :a1, 2024-08-19, 3d
+    Javascript       :after a1  , 2d
+    CSS              :after a1  , 6d
+```
+
 ## 구현 내용
 ### preview
 #### PC
@@ -164,4 +175,4 @@ function goToModal() {
 ```
 
 ## 아쉬웠던 점
-모든 화면 상태에서 반응형으로 만들기 위해 media를 종류별로 나누는 방법과 clamp를 사용해 보았지만 figma사용 미숙과 작업시간 부족으로 인해 구현하지 못했습니다. 시간이 조금 더 있었다면 구현 할 수 있을 것 같다는 아쉬움이 남습니다.
+모든 화면 상태에서 반응형으로 만들기 위해 media를 종류별로 나누는 방법과 clamp를 사용해 보았지만 figma사용 미숙과 작업시간 부족으로 인해 구현하지 못했습니다. 시간이 조금 더 있었다면 구현 할 수 있을 것 같다는 아쉬움이 남습니다.<br />
