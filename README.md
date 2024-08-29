@@ -64,10 +64,9 @@ gantt
 
 ## 구현 내용
 ### preview
-#### PC
-![Preview PC](./preview_gif/HODU_preview_PC.gif)
-#### Mobile
-![Preview Mobile](./preview_gif/HODU_preview_Mobile.gif)
+| PC        | Mobile           |
+|----------------|-----------------------|
+| ![Preview PC](./preview_gif/HODU_preview_PC.gif) | ![Preview Mobile](./preview_gif/HODU_preview_Mobile.gif) |
 
 ### 요구사항 명세
 1. 피그마를 참고하여 페이지 구현을 합니다.
