@@ -39,19 +39,19 @@ ul.navbar-menu li a.btn-download {
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
-    line-height: 50px; /* Adjust this to vertically center the text */
+    line-height: 50px; 
     border-radius: var(--border-radius);
     width: 140px;
     height: 50px;
     text-align: center;
-    display: inline-block; /* Makes the a tag behave like a block element */
+    display: inline-block; 
 }
 
 .btn-more, .btn-download-intro {
-    font-size: clamp(14px, 2vw, 16px); /* 유동적인 폰트 크기 */
-    line-height: clamp(18px, 3vw, 20px); /* 유동적인 줄 간격 */
-    width: clamp(120px, 10vw, 140px); /* 유동적인 너비 */
-    height: clamp(40px, 6vw, 50px); /* 유동적인 높이 */
+    font-size: clamp(14px, 2vw, 16px); 
+    line-height: clamp(18px, 3vw, 20px); 
+    width: clamp(120px, 10vw, 140px); 
+    height: clamp(40px, 6vw, 50px); 
 }
 
 /* 전체 레이아웃 */
