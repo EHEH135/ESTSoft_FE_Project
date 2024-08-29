@@ -54,12 +54,12 @@ html, js, css, asset(이미지, svg)를 나눴습니다.
 ## 개발 일정
 ```mermaid
 gantt
-    est Soft FE Project
+    title Soft FE Project
     dateFormat  YYYY-MM-DD
     section 개발
     HTML             :a1, 2024-08-19, 3d
-    Javascript       :after a1  , 2d
-    CSS              :after a1  , 6d
+    Javascript       :after a1, 2d
+    CSS              :after a1, 6d
 ```
 
 ## 구현 내용
